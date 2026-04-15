@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Simon</title>
+  <meta name="description" content="Research projects and technical work in process engineering, MRI measurement, and CFD simulation.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <span class="logo-name">Simon</span>
+        <span class="logo-dot">.</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+      <div class="page-header-inner">
+        <h1 class="page-title">Projects</h1>
+        <p class="page-subtitle">Research and technical work — from MRI flow measurement to CFD simulation and process optimization.</p>
+      </div>
+    </section>
+
+    <!-- ===== PROJECT LIST ===== -->
+    <section class="section projects-listing">
+      <div class="section-inner">
+        <div class="project-list" id="project-list">
+
+          <article class="project-detail-card">
+            <div class="project-detail-header">
+              <span class="project-number">01</span>
+              <div class="project-status status-complete">Completed</div>
+            </div>
+            <h2 class="project-detail-title">MRI-based Flow &amp; Concentration Mapping in Membrane Systems</h2>
+            <p class="project-detail-desc">
+              Developed non-invasive measurement techniques using MRI velocimetry and relaxometry 
+              to quantify flow fields and solute concentration distributions in electrodialysis 
+              stacks and sterile filtration modules. Enabled validation of CFD models against 
+              spatially resolved experimental data.
+            </p>
+            <div class="project-detail-meta">
+              <div class="project-tech">
+                <span class="tech">MRI</span>
+                <span class="tech">MATLAB</span>
+                <span class="tech">Python</span>
+                <span class="tech">Siemens Skyra</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Publication &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-detail-card">
+            <div class="project-detail-header">
+              <span class="project-number">02</span>
+              <div class="project-status status-active">In revision</div>
+            </div>
+            <h2 class="project-detail-title">Flow Distribution in Single-Use IV In-line Membrane Filters</h2>
+            <p class="project-detail-desc">
+              Combined MRI flow measurement with COMSOL CFD simulations to characterize 
+              and quantify flow maldistribution in clinical single-use intravenous filters. 
+              Developed statistical metrics (Coefficient of Variation) for comparing 
+              parallel channel flow uniformity.
+            </p>
+            <div class="project-detail-meta">
+              <div class="project-tech">
+                <span class="tech">COMSOL</span>
+                <span class="tech">CFD</span>
+                <span class="tech">MRI</span>
+                <span class="tech">Statistics</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Preprint &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-detail-card">
+            <div class="project-detail-header">
+              <span class="project-number">03</span>
+              <div class="project-status status-complete">Completed</div>
+            </div>
+            <h2 class="project-detail-title">Bayesian Optimization of Membrane Process Parameters</h2>
+            <p class="project-detail-desc">
+              Applied Bayesian optimization methods to efficiently explore process parameter 
+              spaces in membrane filtration, reducing the number of required experiments 
+              compared to conventional design-of-experiments approaches.
+            </p>
+            <div class="project-detail-meta">
+              <div class="project-tech">
+                <span class="tech">Python</span>
+                <span class="tech">Bayesian Optimization</span>
+                <span class="tech">DoE</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">Simon<span class="logo-dot">.</span></span>
+        <p class="footer-tagline">Process engineering, one experiment at a time.</p>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:hello@example.com" class="footer-link">Email</a>
+        <a href="https://linkedin.com" class="footer-link" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
