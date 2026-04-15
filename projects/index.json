@@ -6,6 +6,7 @@
     "description": "Developed non-invasive measurement techniques using MRI velocimetry and relaxometry to quantify flow fields and solute concentration distributions in electrodialysis stacks and sterile filtration modules. Enabled validation of CFD models against spatially resolved experimental data.",
     "tech": ["MRI", "MATLAB", "Python", "Siemens Skyra"],
     "status": "complete",
+    "featured": true,
     "links": [
       { "label": "Publication", "url": "#" }
     ]
@@ -17,6 +18,7 @@
     "description": "Combined MRI flow measurement with COMSOL CFD simulations to characterize and quantify flow maldistribution in clinical single-use intravenous filters. Developed statistical metrics (Coefficient of Variation) for comparing parallel channel flow uniformity.",
     "tech": ["COMSOL", "CFD", "MRI", "Statistics"],
     "status": "active",
+    "featured": true,
     "links": [
       { "label": "Preprint", "url": "#" }
     ]
@@ -28,6 +30,7 @@
     "description": "Applied Bayesian optimization methods to efficiently explore process parameter spaces in membrane filtration, reducing the number of required experiments compared to conventional design-of-experiments approaches.",
     "tech": ["Python", "Bayesian Optimization", "DoE"],
     "status": "complete",
+    "featured": false,
     "links": []
   }
 ]
