@@ -1,5 +1,8 @@
 <nav>
-  <a href="/">Home</a>
-  <a href="/research/">Research</a>
-  <a href="/hobbies/">Hobbies</a>
+  {% for item in site.navigation %}
+    <a href="{{ item.url }}"
+       {% if page.url == item.url %}class="active"{% endif %}>
+      {{ item.title }}
+    </a>
+  {% endfor %}
 </nav>
