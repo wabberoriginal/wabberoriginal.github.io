@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Simon</title>
+  <meta name="description" content="Writing on process engineering, MRI research, CFD, and the occasional side quest.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <span class="logo-name">Simon</span>
+        <span class="logo-dot">.</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="blog.html" class="nav-link active">Blog</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header">
+      <div class="page-header-inner">
+        <h1 class="page-title">Blog</h1>
+        <p class="page-subtitle">Notes on process engineering, simulation, measurement, and whatever else I'm thinking about.</p>
+      </div>
+    </section>
+
+    <!-- ===== FILTER BAR ===== -->
+    <section class="section blog-listing">
+      <div class="section-inner">
+        <div class="blog-filters" id="blog-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <!-- Additional filter buttons populated by JS from post tags -->
+        </div>
+
+        <!-- ===== POST LIST ===== -->
+        <div class="post-list" id="post-list">
+          <!-- Populated by JS from posts/index.json — static fallback below -->
+
+          <article class="post-list-item" data-tags="mri,cfd,membranes">
+            <div class="post-list-date">
+              <span class="post-date">15 Apr 2026</span>
+            </div>
+            <div class="post-list-body">
+              <h2 class="post-list-title"><a href="post.html?slug=flow-distribution-filters">Flow Distribution in Single-Use IV Filters</a></h2>
+              <p class="post-excerpt">A look at how we quantified flow maldistribution in clinical membrane filters using MRI velocimetry and CFD.</p>
+              <div class="post-tags">
+                <span class="tag">MRI</span>
+                <span class="tag">CFD</span>
+                <span class="tag">Membranes</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-list-item" data-tags="optimization,statistics">
+            <div class="post-list-date">
+              <span class="post-date">10 Apr 2026</span>
+            </div>
+            <div class="post-list-body">
+              <h2 class="post-list-title"><a href="post.html?slug=bayesian-optimization-intro">Bayesian Optimization for Process Engineers</a></h2>
+              <p class="post-excerpt">Why Bayesian methods beat grid search when your experiments are expensive — a practical primer.</p>
+              <div class="post-tags">
+                <span class="tag">Optimization</span>
+                <span class="tag">Statistics</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="post-list-item" data-tags="comsol,cfd">
+            <div class="post-list-date">
+              <span class="post-date">02 Apr 2026</span>
+            </div>
+            <div class="post-list-body">
+              <h2 class="post-list-title"><a href="post.html?slug=comsol-meshing-tips">COMSOL Meshing: Lessons from the Trenches</a></h2>
+              <p class="post-excerpt">Hard-won tips on boundary layers, convergence, and knowing when your mesh is good enough.</p>
+              <div class="post-tags">
+                <span class="tag">COMSOL</span>
+                <span class="tag">CFD</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">Simon<span class="logo-dot">.</span></span>
+        <p class="footer-tagline">Process engineering, one experiment at a time.</p>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:hello@example.com" class="footer-link">Email</a>
+        <a href="https://linkedin.com" class="footer-link" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
