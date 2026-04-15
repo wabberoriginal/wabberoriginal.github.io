@@ -650,6 +650,36 @@ ul {
   margin: var(--space-xl) 0;
 }
 
+/* Math (KaTeX rendered, with fallback styling) */
+.math-block {
+  text-align: center;
+  padding: var(--space-md) var(--space-lg);
+  margin: var(--space-lg) 0;
+  overflow-x: auto;
+}
+
+.math-block .katex-display {
+  margin: 0;
+}
+
+.math-inline .katex {
+  font-size: 1em;
+}
+
+/* Fallback when KaTeX is unavailable */
+.math-block:not(:has(.katex)),
+.math-inline:not(:has(.katex)) {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  background: var(--color-bg-alt);
+  border-radius: 2px;
+}
+
+.math-inline:not(:has(.katex)) {
+  padding: 0.1em 0.3em;
+  font-size: 0.88em;
+}
+
 
 /* ============================================================
    RESPONSIVE
@@ -1177,5 +1207,140 @@ ul {
 
   .post-nav-inner {
     grid-template-columns: 1fr;
+  }
+}
+
+
+/* ============================================================
+   RESEARCH PAGE
+   ============================================================ */
+.research-areas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  margin: var(--space-lg) 0 var(--space-xl);
+}
+
+.research-area {
+  padding: var(--space-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: 2px;
+}
+
+.research-area h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.research-area p {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+}
+
+/* Publication list */
+.publication-list {
+  margin: var(--space-md) 0 var(--space-xl);
+}
+
+.publication {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.publication:first-child {
+  border-top: 1px solid var(--color-border-light);
+}
+
+.pub-year {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  padding-top: 0.2rem;
+}
+
+.pub-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: var(--space-xs);
+}
+
+.pub-authors {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.pub-journal {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+
+/* ============================================================
+   HOBBIES PAGE
+   ============================================================ */
+.hobbies-layout {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.hobby-card {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: var(--space-lg);
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.hobby-card:first-child {
+  border-top: 1px solid var(--color-border-light);
+}
+
+.hobby-icon {
+  font-size: 2rem;
+  line-height: 1;
+  padding-top: 0.2rem;
+  text-align: center;
+}
+
+.hobby-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  letter-spacing: -0.01em;
+}
+
+.hobby-body p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--color-text-secondary);
+}
+
+
+/* Research + Hobbies responsive */
+@media (max-width: 768px) {
+  .research-areas {
+    grid-template-columns: 1fr;
+  }
+
+  .publication {
+    grid-template-columns: 1fr;
+    gap: var(--space-xs);
+  }
+
+  .hobby-card {
+    grid-template-columns: 3rem 1fr;
+    gap: var(--space-md);
   }
 }
