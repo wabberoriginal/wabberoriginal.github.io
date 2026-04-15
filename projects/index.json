@@ -1,26 +1,33 @@
 [
   {
-    "slug": "flow-distribution-filters",
-    "title": "Flow Distribution in Single-Use IV Filters",
-    "date": "2026-04-15",
-    "excerpt": "A look at how we quantified flow maldistribution in clinical membrane filters using MRI velocimetry and CFD.",
-    "tags": ["MRI", "CFD", "Membranes"],
-    "file": "2026-04-15-flow-distribution-filters.md"
+    "id": "mri-membrane-mapping",
+    "number": "01",
+    "title": "MRI-based Flow & Concentration Mapping in Membrane Systems",
+    "description": "Developed non-invasive measurement techniques using MRI velocimetry and relaxometry to quantify flow fields and solute concentration distributions in electrodialysis stacks and sterile filtration modules. Enabled validation of CFD models against spatially resolved experimental data.",
+    "tech": ["MRI", "MATLAB", "Python", "Siemens Skyra"],
+    "status": "complete",
+    "links": [
+      { "label": "Publication", "url": "#" }
+    ]
   },
   {
-    "slug": "bayesian-optimization-intro",
-    "title": "Bayesian Optimization for Process Engineers",
-    "date": "2026-04-10",
-    "excerpt": "Why Bayesian methods beat grid search when your experiments are expensive — a practical primer.",
-    "tags": ["Optimization", "Statistics"],
-    "file": "2026-04-10-bayesian-optimization-intro.md"
+    "id": "iv-filter-flow",
+    "number": "02",
+    "title": "Flow Distribution in Single-Use IV In-line Membrane Filters",
+    "description": "Combined MRI flow measurement with COMSOL CFD simulations to characterize and quantify flow maldistribution in clinical single-use intravenous filters. Developed statistical metrics (Coefficient of Variation) for comparing parallel channel flow uniformity.",
+    "tech": ["COMSOL", "CFD", "MRI", "Statistics"],
+    "status": "active",
+    "links": [
+      { "label": "Preprint", "url": "#" }
+    ]
   },
   {
-    "slug": "comsol-meshing-tips",
-    "title": "COMSOL Meshing: Lessons from the Trenches",
-    "date": "2026-04-02",
-    "excerpt": "Hard-won tips on boundary layers, convergence, and knowing when your mesh is good enough.",
-    "tags": ["COMSOL", "CFD"],
-    "file": "2026-04-02-comsol-meshing-tips.md"
+    "id": "bayesian-membrane-opt",
+    "number": "03",
+    "title": "Bayesian Optimization of Membrane Process Parameters",
+    "description": "Applied Bayesian optimization methods to efficiently explore process parameter spaces in membrane filtration, reducing the number of required experiments compared to conventional design-of-experiments approaches.",
+    "tech": ["Python", "Bayesian Optimization", "DoE"],
+    "status": "complete",
+    "links": []
   }
 ]
