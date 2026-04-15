@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon — Engineer & Researcher</title>
+  <meta name="description" content="Portfolio and blog of Simon — process engineer, MRI researcher, and membrane technologist.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="site-logo">
+        <span class="logo-name">Simon</span>
+        <span class="logo-dot">.</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="hero-kicker">Process Engineer · MRI Researcher · Membrane Technologist</p>
+        <h1 class="hero-title">
+          Engineering clarity<br>
+          from <em>complex</em> systems.
+        </h1>
+        <p class="hero-subtitle">
+          I combine flow measurement, CFD simulation, and Bayesian optimization
+          to understand and improve membrane processes. Currently open to new challenges.
+        </p>
+        <div class="hero-cta">
+          <a href="projects.html" class="btn btn-primary">View Projects</a>
+          <a href="blog.html" class="btn btn-secondary">Read the Blog</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED POSTS ===== -->
+    <section class="section featured-posts">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 class="section-title">Latest Writing</h2>
+          <a href="blog.html" class="section-link">All posts &rarr;</a>
+        </div>
+        <div class="post-grid" id="featured-posts">
+          <!-- Populated by JS from posts/index.json -->
+          <article class="post-card">
+            <span class="post-date">15 Apr 2026</span>
+            <h3 class="post-card-title"><a href="post.html?slug=flow-distribution-filters">Flow Distribution in Single-Use IV Filters</a></h3>
+            <p class="post-excerpt">A look at how we quantified flow maldistribution in clinical membrane filters using MRI velocimetry and CFD.</p>
+            <div class="post-tags">
+              <span class="tag">MRI</span>
+              <span class="tag">CFD</span>
+              <span class="tag">Membranes</span>
+            </div>
+          </article>
+          <article class="post-card">
+            <span class="post-date">10 Apr 2026</span>
+            <h3 class="post-card-title"><a href="post.html?slug=bayesian-optimization-intro">Bayesian Optimization for Process Engineers</a></h3>
+            <p class="post-excerpt">Why Bayesian methods beat grid search when your experiments are expensive — a practical primer.</p>
+            <div class="post-tags">
+              <span class="tag">Optimization</span>
+              <span class="tag">Statistics</span>
+            </div>
+          </article>
+          <article class="post-card">
+            <span class="post-date">02 Apr 2026</span>
+            <h3 class="post-card-title"><a href="post.html?slug=comsol-meshing-tips">COMSOL Meshing: Lessons from the Trenches</a></h3>
+            <p class="post-excerpt">Hard-won tips on boundary layers, convergence, and knowing when your mesh is good enough.</p>
+            <div class="post-tags">
+              <span class="tag">COMSOL</span>
+              <span class="tag">CFD</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED PROJECTS ===== -->
+    <section class="section featured-projects">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 class="section-title">Selected Projects</h2>
+          <a href="projects.html" class="section-link">All projects &rarr;</a>
+        </div>
+        <div class="project-grid" id="featured-projects">
+          <!-- Populated by JS from projects/index.json -->
+          <article class="project-card">
+            <div class="project-number">01</div>
+            <h3 class="project-card-title">MRI Flow Mapping in Membrane Modules</h3>
+            <p class="project-desc">Non-invasive velocity and concentration measurement in electrodialysis and sterile filtration systems.</p>
+            <div class="project-tech">
+              <span class="tech">MRI</span>
+              <span class="tech">MATLAB</span>
+              <span class="tech">Python</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <h3 class="project-card-title">CFD of IV In-line Filters</h3>
+            <p class="project-desc">COMSOL-based simulation and experimental validation of flow distribution in clinical single-use filters.</p>
+            <div class="project-tech">
+              <span class="tech">COMSOL</span>
+              <span class="tech">CFD</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">Simon<span class="logo-dot">.</span></span>
+        <p class="footer-tagline">Process engineering, one experiment at a time.</p>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:hello@example.com" class="footer-link">Email</a>
+        <a href="https://linkedin.com" class="footer-link" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com" class="footer-link" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
