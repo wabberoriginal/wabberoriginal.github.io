@@ -549,6 +549,23 @@ ul {
   padding: var(--space-2xl) var(--space-lg);
 }
 
+.page-content--wide {
+  max-width: var(--max-width);
+}
+
+.research-layout {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.research-intro {
+  max-width: var(--content-width);
+}
+
+.research-layout > .prose {
+  max-width: var(--content-width);
+}
+
 
 /* ============================================================
    ARTICLE / PROSE (rendered markdown)
