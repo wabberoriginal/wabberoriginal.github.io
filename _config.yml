@@ -1,3 +1,8 @@
 title: Simon's Blog
-description: Research, hobbies, and more
-theme: minima            # GitHub's default theme, or pick another
+navigation:
+  - title: Home
+    url: /
+  - title: Research
+    url: /research/
+  - title: Hobbies
+    url: /hobbies/
