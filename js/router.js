@@ -136,6 +136,13 @@ const SiteRouter = (() => {
   }
 
   /**
+   * Sort posts by date, newest first.
+   */
+  function sortByDate(posts) {
+    return [...posts].sort((a, b) => new Date(b.date) - new Date(a.date));
+  }
+
+  /**
    * Initialize: detect which page we're on and load appropriate data.
    */
   async function init() {
@@ -150,7 +157,7 @@ const SiteRouter = (() => {
         if (featuredPostsEl) {
           const res = await fetch('posts/index.json');
           if (res.ok) {
-            const posts = await res.json();
+            const posts = sortByDate(await res.json());
             featuredPostsEl.innerHTML = posts.slice(0, 3).map(postCardHTML).join('');
           }
         }
@@ -159,7 +166,8 @@ const SiteRouter = (() => {
           const res = await fetch('projects/index.json');
           if (res.ok) {
             const projects = await res.json();
-            featuredProjectsEl.innerHTML = projects.slice(0, 2).map(projectCardHTML).join('');
+            const featured = projects.filter(p => p.featured);
+            featuredProjectsEl.innerHTML = featured.map(projectCardHTML).join('');
           }
         }
       }
@@ -172,7 +180,7 @@ const SiteRouter = (() => {
         if (postListEl) {
           const res = await fetch('posts/index.json');
           if (res.ok) {
-            const posts = await res.json();
+            const posts = sortByDate(await res.json());
             postListEl.innerHTML = posts.map(postListItemHTML).join('');
 
             // Stagger fade-in animation
