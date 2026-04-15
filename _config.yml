@@ -1,6 +1,6 @@
 title: Simon's Blog
 description: Research, hobbies, and more
-theme: minima            # GitHub's default theme, or pick another
+theme: jekyll-theme-cayman            # GitHub's default theme, or pick another
 navigation:
   - title: Home
     url: /
